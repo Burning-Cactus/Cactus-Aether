@@ -1,0 +1,41 @@
+modLoader="javafml" #mandatory
+loaderVersion="[43,)"
+license="All rights reserved"
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+[[mods]] #mandatory
+# The modid of the mod
+modId="cactus_aether"
+version="${file.jarVersion}"
+displayName="Cactus Aether"
+# A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
+#updateJSONURL="https://change.me.example.invalid/updates.json" #optional
+# A URL for the "homepage" for this mod, displayed in the mod UI
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
+logoFile="cactus_aether.png"
+credits="Thanks to everyone else on the Aether Team for making this mod possible!"
+authors="Burning Cactus"
+displayTest="MATCH_VERSION" # MATCH_VERSION is the default if nothing is specified (#optional)
+
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+Neat little additions that may or may not fit in with the Aether.
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.cactus_aether]]
+    modId="forge"
+    mandatory=true
+    versionRange="[43,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.cactus_aether]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.cactus_aether]]
+    modId="aether"
+    mandatory=true
+    versionRange="[0.2.0,)"
+    ordering="NONE"
+    side="BOTH"
